@@ -1,21 +1,39 @@
-# square.py
 
-def calculate_square(number):
+def square(number):
     return number * number
 
 def add(a,b) :
-    return a+b ;
+    return a+b 
 
 def mul(a,b) :
-    return a*b ;
+    return a*b 
 
+def deff(a,b) :
+    return a-b 
 
-if __name__ == "__main__":
-    print("Hello world !")
-    ns = input("inter a number") 
-    
-    n =  float(  ns    ) 
+print('''
+1.square
+2.adding
+3.multiplication
+4.differnce''')
+x=int(input('choose an operator'))
 
-    n2 = calculate_square(n)
-    print(f"result is {n2}")
-    
+if x==1:
+    m=float(input('second number'))
+    square(m)
+
+if x==1:
+    m=float(input('first number'))
+    n=float(input('second number'))
+    add(n,m)
+  
+if x==1:
+    m=float(input('first number'))
+    n=float(input('second number'))
+    mul(n,m)
+  
+if x==1:
+    m=float(input('first number'))
+    n=float(input('second number'))
+    deff(n,m)
+
